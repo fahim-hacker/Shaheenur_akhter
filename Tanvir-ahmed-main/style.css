@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: black;    
+}
+
+script{
+    display: none;
+}
+
+head{
+    display: none;
+}
+
+
+/*Body & Section*/
+
+#Height-width{
+    width: 1080px;
+    height: 2376px;
+}
+
+/* article date-p-1 & date-p-2*/
+
+article.date-p-1,article.date-p-2,.button{
+    background-color: yellow;
+    height: 10vh;
+    width: 80vw;
+    position: absolute;
+    top: 50vh;
+    left: -32vw;
+    transform: translate(-50%, -50%);
+    box-shadow: yellow 0px 0px 11px -13px;
+    animation: slide-show 10s forwards 2s;
+}
+
+@keyframes slide-show{
+    0%{
+        transform: translate(-50%, -50%);
+        box-shadow: yellow 0px 0px 0px 0px;
+        left: -32vw;
+    }
+    10%{
+        transform: translate(-50%, -50%);
+        box-shadow: yellow 0px 0px 11px -13px;
+        left: 50vw;
+        
+    }
+    20%{
+        box-shadow: yellow 0px 0px 11px -13px, #58eb7e 0px 0px 14px 2px;
+        left: 50vw;
+    }
+    30%{
+        box-shadow: yellow 0px 0px 11px -13px, #58eb7e 0px 0px 14px 2px, #ffb800 0px 0px 49px 8px, #ff7f19 0px 0px 58px -6px;
+        left: 50vw;
+    }
+    40%{
+        box-shadow: yellow 0px 0px 11px -13px, #58eb7e 0px 0px 14px 2px, #ffb800 0px 0px 49px 8px;
+        left: 50vw;
+    }
+    50%{
+        box-shadow: yellow 0px 0px 11px -13px, #58eb7e 0px 0px 14px 2px;
+        left: 50vw;
+    }
+    60%{
+        box-shadow: yellow 0px 0px 11px -13px;
+        
+        left: 50vw;
+    }
+    70%{
+        box-shadow: yellow 0px 0px 11px -13px, #58eb7e 0px 0px 14px 2px;
+        left: 50vw;
+    }
+    80%{
+        box-shadow: yellow 0px 0px 11px -13px, #58eb7e 0px 0px 14px 2px, #ffb800 0px 0px 49px 8px;
+        left: 50vw;
+    }
+    90%{
+        box-shadow: yellow 0px 0px 11px -13px, #58eb7e 0px 0px 14px 2px, #ffb800 0px 0px 49px 8px, #ff7f19 0px 0px 58px -6px;
+        left: 50vw;
+    }
+    100%{
+        box-shadow: yellow 0px 0px 0 0, #58eb7e 0px 0px 0 0, #ffb800 0px 0px 0 0, #ff7f19 0px 0px 0 0;
+        left: -50vw;
+        display: none;
+    }
+}
+
+ h1,h2,h3,a{
+    height: 200px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0);
+    font-size: 188px;
+    color: black;
+    padding: 2% 26%;
+}
+h3{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 0;
+}
+article.date-p-2{
+    animation: slide-show 50s forwards;
+    animation-delay: 10s;
+}
+
+
+.button {
+animation-delay: 25s;
+}
+a{
+    font-size: 100px;
+    width: 200px;
+}
+
